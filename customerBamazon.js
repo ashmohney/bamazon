@@ -22,15 +22,13 @@ inquirer.prompt([
         type: "input",
         name: "item_id",
         message: "Please enter the Item ID to purchase.",
-        // validate: true,
-        // filter: Number
+        
     },
     {
         type: "input",
         name: "quantity",
         message: "How many?",
-        // validate: true,
-        // filter: Number
+        
     }
 ]).then(function(input) {
     console.log("Customer has selected: \n    item_id = "  + input.item_id + "\n    quantity = " + input.quantity);
